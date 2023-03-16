@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="vote">
+    <button onclick="variable()">Submit</button>
+    <script>
+        let variable=()=> {
+            let age = document.getElementById("vote").value;
+            try{
+                if(age<18) throw "You are Under 18 not eligible for vote.";
+                if(age>=18 && age<60) throw "You are eligible for voting.";
+                if(age>=60) throw "You are over age not eligible for vote.";
+            }catch(error){
+                document.write(error);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>check output in console</h2>
+    <script>
+       const createFullName=(firstName, lastName)=>{
+return firstName + "&nbsp;&nbsp" + lastName;
+
+}
+console.log("Numman "+"Nawaz");
+
+let number=2;
+const doubleNumber=(number)=> number * 2;
+
+console.log("Your double number is : "+doubleNumber(number));
+
+const array=[1,2,3,4,5,6,7,8,9];
+const getEvenNumbers=(array)=>{
+    
+let evenNumbers = [];
+for (let i of array) {
+if (i % 2 === 0) {
+evenNumbers.push(i);
+
+}
+}
+console.log(evenNumbers);
+}
+getEvenNumbers(array);
+
+    </script>
+    
+</body>
+</html>

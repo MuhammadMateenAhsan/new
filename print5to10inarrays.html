@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Enter Your numebr:</label>
+    <input type="text" name="" id="inputValue">
+    <button type="submit" onclick="variable()">Submit</button>
+    <script>
+
+        const variable = () => {
+            let getValue = document.getElementById("inputValue").value;
+
+            try {
+                if (getValue < 5) throw "input is less than 5";
+                if (getValue >= 5 && getValue <= 10) throw "good your number is in between 5 to 10";
+                if (getValue > 10) throw "input is grater than 10";
+
+            }
+            catch (error) {
+                console.log(error)
+
+            }
+
+
+
+
+            // if(getValue>=5 && getValue<=10){
+            //     // document.write("Congrats number is between 5 and 10.");
+            // console.log("Congrats number is between 5 and 10.");
+            //         return;
+            // }else{
+            //     console.log("error ha")
+            // }
+
+
+        }
+    </script>
+</body>
+
+</html>

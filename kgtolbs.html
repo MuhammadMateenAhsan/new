@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="weight">
+    <button onclick="parent()">Submit</button>
+
+
+    
+    <script>
+        function parent() {
+            let weight = document.getElementById("weight").value;
+
+            const kg2lbs = (kg) => {
+                lbs = kg * 2.2;
+                console.log(lbs);
+                try {
+
+                    if (lbs > 150) throw "Obese";
+                    if (lbs >= 100 && lbs <= 150) throw "You are ok";
+                    if (lbs < 100) throw "underweight";
+
+                } catch (error) {
+                    return error;
+                }
+            }
+            console.log(kg2lbs(weight))
+        }
+
+    </script>
+</body>
+
+</html>
